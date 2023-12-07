@@ -313,6 +313,8 @@ class Analyze:
         base_file_name = self.output_directory + '\\qPCR_analysis_QC.xlsx'
         counter = 0
 
+
+
         while True:
             try:
                 if counter == 0:
@@ -370,9 +372,7 @@ class Analyze:
 
     def plot(self, df):
         
-        plot_target_list = ['CT', '2^-CT','RPL27_dCT', 'RPL27_2^-dCT', 'ddCT', '2^-ddCT'
-                            # 'GAPDH_dCT', 'GAPDH_2^-dCT'
-                            ]
+        plot_target_list = ['CT', '2^-CT','RPL27_dCT', 'RPL27_2^-dCT', 'ddCT', '2^-ddCT']
 
         # Get a sorted list of unique tissues
         subset_label = 'Target Name'
